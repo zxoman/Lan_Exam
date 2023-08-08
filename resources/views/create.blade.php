@@ -172,10 +172,11 @@
 
           </section>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">get data</button>
           </div>
         </form><!-- End No Labels Form -->
+        <form method="delete"></form>
+        <button type="submit" class="btn btn-secondary">create EXAM</button>
 
       </div>
     </div>
@@ -262,9 +263,13 @@
       }
     }
     function all() {
+        z = [];
         for (let index = 0; index < document.querySelectorAll('input[type=checkbox]').length; index++) {
 
             document.querySelectorAll('input[type=checkbox]')[index].checked = !document.querySelectorAll('input[type=checkbox]')[index].checked
+            if (document.querySelectorAll('input[type=checkbox]')[index].checked){
+                z[z.length] = document.querySelectorAll('input[type=checkbox]')[index].value;
+            }
         }
     }
   </script>
