@@ -25,3 +25,4 @@ Route::post('/add', [AddController::class,"add"]);
 Route::get('/create', [ExamController::class,"index"]);
 Route::post('/create', [ExamController::class,"get"]);
 Route::get('/edit', [EditController::class,"index"]);
+Route::post('/edit', [EditController::class,"edit"]);

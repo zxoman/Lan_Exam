@@ -183,7 +183,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Type Your Question</h4>
                     <div class="quill-editor-full">
-                      <p></p>
+                      <?php echo $question->text; ?>
                     </div>
                   </div>
                 </div>
@@ -195,22 +195,25 @@
                 <p></p>
               </div>
             </div>
+            <?php $anss = ["","","","",""];
+            $anss[$question->answer] = "checked";
+          ?>
             <div class="col" id="col">
               <div class="col-md-6">
-                <input type="radio" name="answer" value="1" class="rad">
-                <input type="text" name="a1" class="form-control" placeholder="ANS-1">
+                <input type="radio" {{$anss[1]}} name="answer" value="1" class="rad">
+                <input type="text" value="{{$question->a1}}" name="a1" class="form-control" placeholder="ANS-1">
              </div>
               <div class="col-md-6">
-                <input type="radio" name="answer" value="2" class="rad">
-                <input type="text" name="a2" class="form-control" placeholder="ANS-2">
+                <input type="radio" {{$anss[2]}} name="answer" value="2" class="rad">
+                <input type="text" value="{{$question->a2}}" name="a2" class="form-control" placeholder="ANS-2">
               </div>
               <div class="col-md-6">
-                <input type="radio" name="answer" value="3" class="rad">
-                <input type="text" name="a3" class="form-control" placeholder="ANS-3">
+                <input type="radio" {{$anss[3]}} name="answer" value="3" class="rad">
+                <input type="text" value="{{$question->a3}}" name="a3" class="form-control" placeholder="ANS-3">
               </div>
               <div class="col-md-6">
-                <input type="radio" name="answer" value="4" class="rad">
-                <input type="text" name="a4" class="form-control" placeholder="ANS-4">
+                <input type="radio" {{$anss[4]}} name="answer" value="4" class="rad">
+                <input type="text" value="{{$question->a4}}" name="a4" class="form-control" placeholder="ANS-4">
               </div>
               <input type="hidden" id="q" name="text">
               <div class="text-center">

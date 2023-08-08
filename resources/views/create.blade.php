@@ -195,7 +195,7 @@
               <th scope="col">2</th>
               <th scope="col">3</th>
               <th scope="col">4</th>
-              <th scope="col"><input type="checkbox" onclick="all()" value="all"></th>
+              <th scope="col"><input type="checkbox" onchange="all()" value="all"></th>
             </tr>
           </thead>
           <tbody>
@@ -209,7 +209,7 @@
               <td>{{$question->a2}}</td>
               <td>{{$question->a3}}</td>
               <td>{{$question->a4}}</td>
-              <td onclick="select('in{{$question->id}}')"><input type="checkbox" id="in{{$question->id}}" value="{{$question->id}}"></td>
+              <td><input type="checkbox" onchange="selectb('in{{$question->id}}')" id="in{{$question->id}}" value="{{$question->id}}"></td>
             </tr>
             @endforeach
 
@@ -249,17 +249,23 @@
   <script src="assets/js/main.js"></script>
   <script>
     var z = [];
-     select = function (id) {
+    function selectb(id) {
       e = document.getElementById(id);
-      
+
       if (e.checked) {
         z[z.length] = e.value
       }else{
         if (z.indexOf(e.value)> -1) {
-          
+
           z[z.indexOf(e.value)] = ""
         }
       }
+    }
+    function all() {
+        for (let index = 0; index < document.querySelectorAll('input[type=checkbox]').length; index++) {
+
+            document.querySelectorAll('input[type=checkbox]')[index].checked = !document.querySelectorAll('input[type=checkbox]')[index].checked
+        }
     }
   </script>
 
