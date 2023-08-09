@@ -39,7 +39,7 @@ p {
     text-align: center;
 }
 
-h2{
+#i{
     grid-column: 1/2;
     border-style: groove;
     width: 30px;

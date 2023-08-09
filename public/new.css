@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.section {
+display: none;
+}
+
+.section.active {
+display: block;
+}
+
+.nav {
+list-style: none;
+margin:0;
+padding: 0;
+display: flex;
+align-items: center;
+}
+.nav button {
+background: #ccc;
+padding: 10px 15px;
+margin-left: 6px;
+border-radius: 50%;
+cursor: pointer;
+opacity: .5;
+border: none;
+}
+
+.next,
+.previous {
+padding: 15px 10px;
+border-radius: 6px;
+background: deepskyblue;
+color: white;
+border:0;
+outline: none;
+cursor: pointer;
+width: 100px;
+visibility: hidden;
+}
+
+.button-active {
+opacity: 1 !important;
+visibility: visible;
+}

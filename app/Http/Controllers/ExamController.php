@@ -73,6 +73,6 @@ class ExamController extends Controller
             $question = DB::table('questions')->select()->where(["id" => $question_id])->get();
             $questions[] = $question[0];
         }
-        return view('exam.exam',['questions' => json_encode($questions),"exam_id" => $id]);
+        return view('exam.new',['questions' => json_encode($questions),"exam_id" => $id]);
     }
 }
