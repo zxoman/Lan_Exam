@@ -33,3 +33,4 @@ Route::get('/results', [ResultController::class,"get_results"]);
 Route::get('/qr', [ExamController::class,"qr"]);
 Route::get('/scanner', [ExamController::class,"scanner"]);
 Route::get('/exam', [ExamController::class,"get_exam"]);
+Route::post('/exam', [ResultController::class,"add_results"]);

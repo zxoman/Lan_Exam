@@ -11,9 +11,9 @@
     <div class="r">
            <div class="re">
                 <div class="resu">
-                    <h6>15/20</h6>
+                    <h6>{{$result}}/{{$number}}</h6>
                 </div>
-                
+
             </div>
 
             <!-- ======= Footer ======= -->
@@ -25,6 +25,6 @@
                 Designed by <a href="https://wa.me/+201019630362">Mohamed samir</a>
                 </div>
             </footer><!-- End Footer -->
-    </div>        
+    </div>
 </body>
 </html>

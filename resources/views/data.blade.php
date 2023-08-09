@@ -120,8 +120,8 @@
               <option value="1d">الأول الإعدادي</option>
               <option value="2d">الثاني الإعدادي</option>
               <option value="3d">الثالث الإعدادي</option>
-              
-              
+
+
             </select>
           </div>
           <div class="col-md-4">
@@ -161,7 +161,7 @@
               <option value="10">10</option>
             </select>
           </div>
- 
+
           </section>
           <div class="text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -191,9 +191,10 @@
             </tr>
           </thead>
           <tbody>
+            <?php $ni = 1;?>
             @foreach ($questions as $question)
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">{{$ni}}</th>
                 <td>{{$question->text}}</td>
                 <td>{{$question->answer}}</td>
                 <td>{{$question->class}}</td>
@@ -203,13 +204,14 @@
                 <td>{{$question->a4}}</td>
                 <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
               </tr>
+              <?php $ni++; ?>
             @endforeach
-          
+
           </tbody>
         </table>
         <!-- End Bordered Table -->
 
-        
+
 
       </div>
     </div>

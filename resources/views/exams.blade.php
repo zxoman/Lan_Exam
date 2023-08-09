@@ -32,14 +32,16 @@
               </tr>
             </thead>
             <tbody>
+                <?php $ni = 1;?>
                 @foreach ($exams as $exam)
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">{{$ni}}</th>
                 <td>{{$exam->name}}</td>
                 <td>{{$exam->number}}</td>
                 <td><a href="/results?id={{$exam->id}}"><button class="edit">result</button></a></td>
                 <td><a href="/qr?id={{$exam->id}}"><button class="delete">QR</button></a></td>
               </tr>
+              <?php $ni++;?>
                 @endforeach
 
             </tbody>

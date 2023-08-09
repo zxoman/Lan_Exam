@@ -40,13 +40,13 @@
                 <td>{{$result->number}}</td>
               </tr>
               @endforeach
-              
+
             </tbody>
           </table>
           <!-- End Bordered Table -->
-  
-          
-  
+
+
+
         </div>
       </div>
 

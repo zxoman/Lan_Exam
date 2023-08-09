@@ -205,9 +205,10 @@
             </tr>
           </thead>
           <tbody>
+            <?php $ni = 1;?>
             @foreach ($questions as $question)
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">{{$ni}}</th>
               <td>{{$question->text}}</td>
               <td>{{$question->answer}}</td>
               <td>{{$question->class}}</td>
@@ -217,6 +218,7 @@
               <td>{{$question->a4}}</td>
               <td><input type="checkbox" onchange="selectb('in{{$question->id}}')" id="in{{$question->id}}" value="{{$question->id}}"></td>
             </tr>
+            <?php $ni++; ?>
             @endforeach
 
           </tbody>

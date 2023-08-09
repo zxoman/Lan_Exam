@@ -54,6 +54,7 @@
     </div>
 
 <form method="post" id="formex">
+    @csrf
     <input type="hidden" name="result" id="result">
     <input type="hidden" name="number" id="number">
     <input type="hidden" value="{{$exam_id}}" name="exam" id="examid">
