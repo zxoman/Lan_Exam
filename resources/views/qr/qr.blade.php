@@ -2,10 +2,9 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - QR Code Reader - Javascript</title>
-  <link rel="stylesheet" href="./style.css">
+  <title> - QR Code Reader - Javascript</title>
+  <link rel="stylesheet" href="/qrc/style.css">
 
-  <link href="favicon.png" rel="icon">
 
 </head>
 <body>
@@ -35,12 +34,12 @@
     &copy; Copyright <strong><span> QR-Scanner</span></strong>. All Rights Reserved
   </div>
   <div class="credits">
-    Designed by <a href="https://wa.me/+201019630362">mohamed samir</a>
+    Designed by <a href="https://wa.me/+201019630362"> team X</a>
   </div>
 </footer><!-- End Footer -->
 
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js'></script><script  src="./script.js"></script>
+  <script src='/qrc/qr.min.js'></script><script  src="/qrc/script.js"></script>
 
 </body>
 </html>

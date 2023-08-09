@@ -114,12 +114,7 @@
         <form class="row g-3" method="POST">
           {{ csrf_field() }}
           <div class="col-md-4">
-            <div class="col-md-6">
-              <input type="text" name="number" class="form-control" placeholder="عدد الاسئله">
-            </div>
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="اسم الامتحان">
-            </div>
+
             <select id="inputState" name="class" class="form-select">
               <option value="" selected>الصف</option>
               <option value="1">الأول الثانوي</option>
@@ -175,12 +170,22 @@
             <button type="submit" class="btn btn-primary">get data</button>
           </div>
         </form><!-- End No Labels Form -->
-        <form method="delete"></form>
-        <button type="submit" class="btn btn-secondary">create EXAM</button>
+        <form method="post" id="nform">
+            @method('delete')
+            @csrf
+            <div class="col-md-6">
+                <input type="text" name="number" class="form-control" placeholder="عدد الاسئله">
+              </div>
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="اسم الامتحان">
+              </div>
+            <input type="hidden" id="exam" name="exam">
+            <button type="button" onclick="createEx()" class="btn btn-secondary">create EXAM</button>
 
+        </form>
       </div>
     </div>
-
+    <center><button onclick="allz()">Select All</button></center>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Bank</h5>
@@ -196,7 +201,7 @@
               <th scope="col">2</th>
               <th scope="col">3</th>
               <th scope="col">4</th>
-              <th scope="col"><input type="checkbox" onchange="all()" value="all"></th>
+              <th scope="col">select</th>
             </tr>
           </thead>
           <tbody>
@@ -250,6 +255,12 @@
   <script src="assets/js/main.js"></script>
   <script>
     var z = [];
+
+    function createEx() {
+        ids = z.toLocaleString()
+        document.getElementById('exam').value = ids;
+        document.getElementById('nform').submit()
+    }
     function selectb(id) {
       e = document.getElementById(id);
 
@@ -262,7 +273,7 @@
         }
       }
     }
-    function all() {
+    function allz() {
         z = [];
         for (let index = 0; index < document.querySelectorAll('input[type=checkbox]').length; index++) {
 
