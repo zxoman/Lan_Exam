@@ -24,6 +24,7 @@ class ExamController extends Controller
                 unset($post_data[$key]);
             }
         }
+        $post_data['type_a'] = "choices";
         $questions = DB::table('questions')->select()->where($post_data)->get();
         return view('create', ["questions" => $questions]);
     }
@@ -72,6 +73,6 @@ class ExamController extends Controller
             $question = DB::table('questions')->select()->where(["id" => $question_id])->get();
             $questions[] = $question[0];
         }
-        return view('exam.exam',['questions' => $questions]);
+        return view('exam.exam',['questions' => json_encode($questions),"exam_id" => $id]);
     }
 }
