@@ -21,6 +21,9 @@ class GetController extends Controller
                 unset($post_data[$key]);
             }
         }
+        if(!empty($post_data['id'])){
+            $post_data = ['id' => $post_data['id']];
+        }
         $questions = DB::table('questions')->select()->where($post_data)->get();
         return view('data',["questions" => $questions]);
 

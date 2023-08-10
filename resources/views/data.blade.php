@@ -170,7 +170,9 @@
               <option value="10">10</option>
             </select>
           </div>
-
+          <div class="col-md-6">
+            <input type="text" name="id" class="form-control" placeholder="ID">
+          </div>
           </section>
           <div class="text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
