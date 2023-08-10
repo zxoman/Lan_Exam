@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddController;
+use App\Http\Controllers\DeleteController;
 use App\Http\Controllers\EditController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\GetController;
@@ -34,3 +35,7 @@ Route::get('/qr', [ExamController::class,"qr"]);
 Route::get('/scanner', [ExamController::class,"scanner"]);
 Route::get('/exam', [ExamController::class,"get_exam"]);
 Route::post('/exam', [ResultController::class,"add_results"]);
+Route::get('/delete', [DeleteController::class,"delete"]);
+Route::get('/kk',function(){
+ return view('result',['result'=>'20','number' => '20']);
+});

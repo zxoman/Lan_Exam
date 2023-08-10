@@ -74,28 +74,28 @@
   </header><!-- End Header -->
 
   <aside id="sidebar" class="sidebar">
-  <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="add.html">
-        <i class="bi bi-grid"></i>
-        <span>Add Question
-        </span>
-      </a>
-      <a class="nav-link collapsed" href="print.html">
-        <i class="bi bi-grid"></i>
-        <span>Create Exams
-        </span>
-      </a>
-      <a class="nav-link collapsed" href="data.html">
-        <i class="bi bi-grid"></i>
-        <span>Bank Exams
-        </span>
-      </a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/add">
+          <i class="bi bi-grid"></i>
+          <span>Add Question
+          </span>
+        </a>
+        <a class="nav-link collapsed" href="/create">
+          <i class="bi bi-grid"></i>
+          <span>Create Exams
+          </span>
+        </a>
+        <a class="nav-link collapsed" href="/">
+          <i class="bi bi-grid"></i>
+          <span>Bank Exams
+          </span>
+        </a>
+      </li>
 
-  </ul>
-  </aside>
+    </ul>
+    </aside>
 
 
   <main id="main" class="main" style="text-align:center;">

@@ -27,7 +27,15 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
 
+    .car1{
+        width: fit-content;
+    }
+    .ta0{
+        width: fit-content;
+    }
+</style>
 </head>
 
 <body>
@@ -79,17 +87,17 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="add.html">
+        <a class="nav-link collapsed" href="/add">
           <i class="bi bi-grid"></i>
           <span>Add Question
           </span>
         </a>
-        <a class="nav-link collapsed" href="print.html">
+        <a class="nav-link collapsed" href="/create">
           <i class="bi bi-grid"></i>
           <span>Create Exams
           </span>
         </a>
-        <a class="nav-link collapsed" href="data.html">
+        <a class="nav-link collapsed" href="/">
           <i class="bi bi-grid"></i>
           <span>Bank Exams
           </span>
@@ -97,7 +105,7 @@
       </li>
 
     </ul>
-  </aside>
+    </aside>
 
 
   <main id="main" class="main" style="text-align:center;">
@@ -186,8 +194,8 @@
       </div>
     </div>
     <center><button onclick="allz()">Select All</button></center>
-    <div class="card">
-      <div class="card-body">
+    <div class="card ta0">
+      <div class="card-body ta0">
         <h5 class="card-title">Bank</h5>
         <!-- Bordered Table -->
         <table class="table table-bordered">

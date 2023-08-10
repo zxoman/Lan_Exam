@@ -6,6 +6,25 @@
     <title>result</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html{
+            width: 100%;
+            background-image: linear-gradient(45deg, rgb(69, 43, 100) , rgb(23, 30, 97) 80%);
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        .r{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="r">
@@ -16,15 +35,9 @@
 
             </div>
 
-            <!-- ======= Footer ======= -->
-            <footer id="footer" class="footer">
-                <div class="copyright">
-                &copy; Copyright <strong><span>exam</span></strong>. All Rights Reserved
-                </div>
-                <div class="credits">
-                Designed by <a href="https://wa.me/+201019630362">Mohamed samir</a>
-                </div>
-            </footer><!-- End Footer -->
+
+
     </div>
 </body>
 </html>
+

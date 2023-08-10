@@ -29,5 +29,6 @@ class EditController extends Controller
         $result = DB::table('questions')
             ->where('id', $id)
             ->update($post_data);
+        return redirect('/edit?id='.$id);
     }
 }

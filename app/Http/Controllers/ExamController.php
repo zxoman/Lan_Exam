@@ -39,6 +39,7 @@ class ExamController extends Controller
         unset($post_data['_token']);
         unset($post_data['_method']);
         DB::table("exams")->insert($post_data);
+        return redirect('/exams');
     }
     public function exams()
     {
@@ -73,6 +74,6 @@ class ExamController extends Controller
             $question = DB::table('questions')->select()->where(["id" => $question_id])->get();
             $questions[] = $question[0];
         }
-        return view('exam.new',['questions' => json_encode($questions),"exam_id" => $id]);
+        return view('exam.new',['questions' => $questions,"exam_id" => $id]);
     }
 }

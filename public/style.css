@@ -121,6 +121,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: minmax(50px,auto);
+    justify-items: center;
 }
 .re{
     display: grid;
@@ -128,18 +129,14 @@ h3{
     grid-auto-rows: minmax(50px,auto);
     grid-column: 1/1;
     grid-row: 1/2;
-    margin-top: 80px;
-    margin-left: 35%;
+
     background-image: linear-gradient(45deg, rgb(69, 43, 100) , rgb(23, 30, 97) 80%);
     box-shadow: 0 4px 8px 0 rgba(115, 222, 241, 0.521), 0 6px 20px 0 rgba(152, 56, 197, 0.466);
     width: 300px;
     height: 300px;
-    margin-top: 400px;
-    margin-left: 5px;
     border-radius: 50%;
     animation: pulse 2s infinite;
-    display: flex;
-    justify-content: space-between;
+
 }
 .resu{
     grid-column: 1/5;
@@ -148,14 +145,12 @@ h3{
     height: 300px;
     border-radius: 50%;
     font-size: 95px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 h6{
-    margin-top: 140px;
-    margin-left: 50px;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 @-webkit-keyframes pulse {
@@ -198,12 +193,12 @@ h6{
     grid-row: 4/5;
     margin-top: 100px;
   }
-  
+
   .footer .copyright {
     text-align: center;
     color: #ffffff;
   }
-  
+
   .footer .credits {
     padding-top: 5px;
     text-align: center;

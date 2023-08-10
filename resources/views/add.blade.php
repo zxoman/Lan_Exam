@@ -7,7 +7,7 @@
   <title>Add - dashboard</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
- 
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -74,29 +74,28 @@
   </header><!-- End Header -->
 
   <aside id="sidebar" class="sidebar">
-  <ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="add.html">
-        <i class="bi bi-grid"></i>
-        <span>Add Question
-        </span>
-      </a>
-      <a class="nav-link collapsed" href="print.html">
-        <i class="bi bi-grid"></i>
-        <span>Create Exams
-        </span>
-      </a>
-      <a class="nav-link collapsed" href="data.html">
-        <i class="bi bi-grid"></i>
-        <span>Bank Exams
-        </span>
-      </a>
-    </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/add">
+          <i class="bi bi-grid"></i>
+          <span>Add Question
+          </span>
+        </a>
+        <a class="nav-link collapsed" href="/create">
+          <i class="bi bi-grid"></i>
+          <span>Create Exams
+          </span>
+        </a>
+        <a class="nav-link collapsed" href="/">
+          <i class="bi bi-grid"></i>
+          <span>Bank Exams
+          </span>
+        </a>
+      </li>
 
-  </ul>
-  </aside>
-
+    </ul>
+    </aside>
 
   <main id="main" class="main" style="text-align:center;">
 
@@ -104,10 +103,10 @@
       <h1>Form Editors</h1>
     </div><!-- End Page Title -->
 
-    
 
-    
-    
+
+
+
 
     <div class="card">
       <div class="card-body">
@@ -125,8 +124,8 @@
               <option value="1d">الأول الإعدادي</option>
               <option value="2d">الثاني الإعدادي</option>
               <option value="3d">الثالث الإعدادي</option>
-              
-              
+
+
             </select>
           </div>
           <div class="col-md-4">
@@ -166,7 +165,7 @@
               <option value="10">10</option>
             </select>
           </div>
-          
+
           <section class="section" >
               <div class="col-lg-6" style="width:100%;" >
                 <div class="card" >
@@ -209,7 +208,7 @@
                 <button type="reset" class="btn btn-secondary">Reset</button>
               </div>
             </div>
-          </div> 
+          </div>
         </form><!-- End No Labels Form -->
 
       </div>

@@ -9,6 +9,7 @@ class DeleteController extends Controller
 {
     public function delete(Request $request)  {
         $id = $request->input('id');
-        DB::table('users')->where(['id'=> $id])->delete();
+        DB::table('questions')->where(['id'=> $id])->delete();
+        return redirect('/');
     }
 }

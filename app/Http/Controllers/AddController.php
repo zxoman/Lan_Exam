@@ -17,7 +17,6 @@ class AddController extends Controller
         $post_data['type_q'] = "text";
         $post_data['type_a'] = "choices";
         DB::table("questions")->insert($post_data);
-        dd($post_data);
+        return redirect('/add');
     }
 }
- 

@@ -27,6 +27,15 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
+<style>
+
+    .car1{
+        width: fit-content;
+    }
+    .ta0{
+        width: fit-content;
+    }
+</style>
 
 <body>
   <!-- ======= Header ======= -->
@@ -77,17 +86,17 @@
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="add.html">
+      <a class="nav-link collapsed" href="/add">
         <i class="bi bi-grid"></i>
         <span>Add Question
         </span>
       </a>
-      <a class="nav-link collapsed" href="print.html">
+      <a class="nav-link collapsed" href="/create">
         <i class="bi bi-grid"></i>
         <span>Create Exams
         </span>
       </a>
-      <a class="nav-link collapsed" href="data.html">
+      <a class="nav-link collapsed" href="/">
         <i class="bi bi-grid"></i>
         <span>Bank Exams
         </span>
@@ -104,8 +113,8 @@
       <h1>Bank - Data</h1>
     </div><!-- End Page Title -->
 
-    <div class="card">
-      <div class="card-body">
+    <div class="card car0">
+      <div class="card-body ">
         <h5 class="card-title">Your Questions</h5>
 
         <!-- No Labels Form -->
@@ -172,8 +181,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-body">
+    <div class="card ta0">
+      <div class="card-body car1">
         <h5 class="card-title">Bank</h5>
         <!-- Bordered Table -->
         <table class="table table-bordered">
@@ -202,7 +211,7 @@
                 <td>{{$question->a2}}</td>
                 <td>{{$question->a3}}</td>
                 <td>{{$question->a4}}</td>
-                <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                <td><a href="/edit?id={{$question->id}}"><button class="edit">Edit</button></a><a href="/delete?id={{$question->id}}"><button class="delete">Delete</button></a></td>
               </tr>
               <?php $ni++; ?>
             @endforeach
