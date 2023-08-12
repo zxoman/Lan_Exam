@@ -10,11 +10,9 @@
 <body>
 <div id="body" style="width:550px;">
 	<div style="width:100%;">
-		<h2>Offline QR Generator</h2>
+		<h2>{{$ip}}:8000/exam?id={{$id}}</h2>
 	</div>
-	<div style="width:100%; text-align:center;">
-		<input id="qr" type="text" placeholder="QR Text" style="width:100%; margin: 0 auto;" />
-	</div>
+
 	<div id="qrcode2" style="position:absolute; z-index:3; width:250px; height:250px; padding-left:10px; padding-top:20px;" />
 </div>
 <script type="text/javascript">
@@ -26,7 +24,7 @@ var qrcode2 = new QRCode(document.getElementById("qrcode2"), {
 });
 
 
-qrcode2.makeCode("{{$ip}}?id={{$id}}");
+qrcode2.makeCode("{{$ip}}:8000/exam?id={{$id}}");
 
 
 </script>

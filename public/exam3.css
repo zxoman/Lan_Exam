@@ -1,0 +1,159 @@
+html{
+    background-color: aliceblue;
+}
+
+.container{
+    display: grid;
+    grid-auto-rows: minmax(50px,auto);
+    gap: 10px;
+}
+
+.head{
+    grid-row: 1/2;
+text-align: center;
+background-color: white;
+border-radius: 4px;
+box-shadow: 10px 5px 25px rgb(216, 228, 238);
+}
+
+.input-name{
+    border: none;
+    border-radius: 4px;
+    width: 350px;
+    height: 24px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgb(235, 242, 243);
+    box-shadow: 7px 5px 4px rgb(216, 228, 238);
+}
+
+.pages{
+    grid-row: 2/3;
+    text-align: center;
+}
+.button-page{
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 1px 2px 20px rgb(182, 192, 201);
+}
+.button-page:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.content{
+    grid-row: 3/4;
+    display: grid;
+    grid-auto-rows: minmax(80px,auto);
+    gap: 10px;
+    background-color: white;
+    box-shadow: 10px 5px 25px rgb(216, 228, 238);
+    border-radius: 10px;
+}
+
+.quis{
+    grid-row: 1/2;
+    display: grid;
+    grid-auto-columns: minmax(30px,auto);
+    gap: 10px;
+    border-radius: 4px;
+}
+.quistion{
+    grid-column: 2/10;
+    text-align: center;
+}
+.number{
+    border-right: 1px dotted rgb(199, 199, 199);
+    border-bottom: 1px dotted rgb(199, 199, 199);
+    text-align: center;
+    display: grid;
+    grid-auto-rows: minmax(2px,auto);
+}
+.nu{
+    grid-row: 2/3;
+    font-size: 20px;
+}
+
+.unswer{
+    display: grid;
+    grid-auto-columns: minmax(40px,auto);
+    grid-auto-rows: minmax(50px,auto);
+    gap: 10px;
+}
+.uns{
+    display: grid;
+    grid-auto-rows: minmax(6px,auto);
+    
+    width: 250px;
+    height: 40px;
+    background-color: #16b5e6;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+}
+.uns:hover{
+    background-color: rgb(2, 90, 255);
+}
+.uns1{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.uns2{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.uns3{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.uns4{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.buttons-div{
+    display: grid;
+    grid-auto-columns: minmax(50px,auto);
+    grid-auto-rows: minmax(20px,auto);
+    gap: 20px;
+}
+.back-button{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.supmit-button{
+    grid-column: 9/10;
+    grid-row: 2/3;
+}
+.next-button{
+    grid-column: 8/9;
+    grid-row: 2/3;
+}
+
+.buttons{
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #16b5e6;
+    color: white;
+    box-shadow: 10px 5px 25px rgb(216, 228, 238);
+}
+.buttons:hover{
+    background-color: rgb(235, 235, 235);
+}
+.buttons:active{
+    background-color: rgb(204, 234, 247);
+}
+
+.u{
+  grid-row: 2/3;
+}
+
+@media (width <= 600){
+    .uns{
+        width: 100px;
+    }
+}

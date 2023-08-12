@@ -67,13 +67,13 @@ class ExamController extends Controller
             if (!empty($value))
                 $ids[] = $value;
         }
-        $keys = array_rand($ids,20);
+        $keys = array_rand($ids,$exam->number);
         $questions = [];
         foreach ($keys as $key) {
             $question_id = $ids[$key];
             $question = DB::table('questions')->select()->where(["id" => $question_id])->get();
             $questions[] = $question[0];
         }
-        return view('exam.new',['questions' => $questions,"exam_id" => $id]);
+        return view('exam.exam3',['questions' => $questions,"exam_id" => $id]);
     }
 }
